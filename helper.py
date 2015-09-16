@@ -1,3 +1,5 @@
+
+
 def print_table(xs, res, ns):
 	print (' x |', end='')
 	for x in map(str, xs):
@@ -13,4 +15,4 @@ def print_table(xs, res, ns):
 
 	print('\n')
 
-	
+triple = ()
