@@ -13,6 +13,6 @@ lagrange = lambda x: np.sum([l(xs[i], x) * ys[i] for i in range(0, len(xs))])
 
 interxs = np.arange(-15, 15, 0.25)
 interys = [lagrange(x) for x in interxs]
-plot.plot(xs, ys)
+plot.plot(xs, ys, "o-")
 plot.plot(interxs, interys)
 plot.show()
