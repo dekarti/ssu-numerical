@@ -1,7 +1,7 @@
 import math
-import helper
 import matplotlib.pyplot as plot
 import numpy as np
+import helper
 
 f = math.sin
 xs = np.arange(-15, 15, 0.5)
