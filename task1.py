@@ -8,7 +8,7 @@ xs = range(-5, 6)
 sums = []
 ns = []
 for x in xs:
-	fx = var * x
+	fx = VAR * x
 	sum = fx
 	i = 3
 	n = 0
@@ -20,6 +20,8 @@ for x in xs:
 	sums.append(round(sum, 4))
 	ns.append(n)
 
-helper.print_table(table_headers=['x', 's', 'n'],
+helper.print_table(table_headers=['x', 'f(x)', 'n'],
 				   table_values=[xs, sums, ns],
-				   table_title='Lagrange')
+				   table_title='Taylor sum')
+
+helper.save(value_list=[xs, sums], to='values.txt')

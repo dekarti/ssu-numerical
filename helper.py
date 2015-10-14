@@ -7,7 +7,6 @@ def print_table(table_headers, table_values, table_title=''):
 	os.system("cls")
 
 	table_data = [table_headers]
-
 	for i in range(0, len(table_values[0])):
 		dataline = []
 		for j in range(0, len(table_headers)):
@@ -22,4 +21,8 @@ def print_table(table_headers, table_values, table_title=''):
 	table.inner_row_border = False
 	print(table.table)
 
+def save(value_list, to):
+	with open(to, 'w') as f:
+		for values in value_list:
+		 	print(' '.join(map(str, values)), file=f)
  
