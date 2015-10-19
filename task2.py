@@ -18,7 +18,7 @@ table_headers = ['x', 'f(x)', 'L(x)']
 
 table_values = [
 	interxs[:5],									# x
-	sum([[i, ' ']][:-1])							# f(x)
+	sum([[round(y, 4), ' '] for y in ys], [])[:-1],				# f(x)
 	list(map(lambda y: round(y, 4), interys))[:5]]	# L(x)
 
 helper.print_table(
@@ -26,8 +26,6 @@ helper.print_table(
 	table_values,
 	table_title='Lagrange',
 	table_view='v')
-
-
 
 # plot.plot(xs, ys, "o-")
 # plot.plot(interxs, interys)
