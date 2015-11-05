@@ -23,8 +23,8 @@ def print_table(table_headers,
 	table = SingleTable(table_data)
 	table.title = table_title
 	table.justify_columns = {0: 'left',
-							 1: 'right',
-							 2: 'right'}
+							 1: 'left',
+							 2: 'left'}
 	table.inner_row_border = False
 	print(table.table)
 
@@ -33,4 +33,7 @@ def save(value_list, to):
 	with open(to, 'w') as f:
 		for values in value_list:
 		 	print(' '.join(map(str, values)), file=f)
- 
+
+def make_proportional(list1):
+	return sum([[str(round(y, 4)), ' '] for y in list1], [])
+ 	
