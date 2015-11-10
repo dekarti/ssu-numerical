@@ -36,4 +36,11 @@ def save(value_list, to):
 
 def make_proportional(list1):
 	return sum([[str(round(y, 4)), ' '] for y in list1], [])
+
+def frange(start, stop, step):
+	r = start
+	while r < stop:
+		yield r
+		r += step
+
  	
