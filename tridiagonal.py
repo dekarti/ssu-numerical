@@ -36,7 +36,3 @@ if __name__ == '__main__':
 	rs = [-10, -26, -16, -2, 16]
 	xs = tridiagonal(tuples, rs)
 	print(xs)
-
-
-
-
